@@ -14,19 +14,19 @@ class MoviePage extends Component {
     this.props.fetchMovies();
   }
   render() {
-    let movie = "fetching";
-
-    if (this.props.movies.length) {
-      movie = this.props.movies.find(movie => {
-        return movie.id == this.props.match.params.movieId;
-      });
+    if (!this.props.movies.length || !this.props.genres.length) {
+      return null;
     }
+
+    const movie = this.props.movies.find(movie => {
+      return movie.id == this.props.match.params.movieId;
+    });
 
     return (
       <div>
         <Poster movie={movie} />
         <MovieJumbotron movie={movie} />
-        <MovieInformation movie={movie} />
+        <MovieInformation movie={movie} genres={this.props.genres} />
       </div>
     );
   }

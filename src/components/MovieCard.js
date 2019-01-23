@@ -16,6 +16,7 @@ const MovieCard = ({ movie }) => {
       <img
         style={styles.MovieImage}
         src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
+        alt={movie.title}
       />
     </div>
   );

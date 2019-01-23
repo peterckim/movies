@@ -24,7 +24,7 @@ class Movies extends Component {
     return (
       <div style={styles.MoviesContainer}>
         <h1 style={headerStyle}>
-          <img src="/video-camera.svg" alt="film-image" style={styles.Icon} />
+          <img src="/video-camera.svg" alt="film" style={styles.Icon} />
           In Cinemas
         </h1>
         <Grid fluid={true}>

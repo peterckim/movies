@@ -109,6 +109,19 @@ const BannerImage = {
   color: "white"
 };
 
+const GenreList = {
+  listStyleType: "none",
+  display: "flex"
+};
+
+const Genre = {
+  backgroundColor: "blue",
+  borderRadius: "5px",
+  padding: "5px",
+  marginRight: "10px",
+  color: "white"
+};
+
 const MoviePoster = {
   position: "absolute",
   top: "50vh",
@@ -225,5 +238,7 @@ export const styles = {
   LandingPageBackgroundContainer: LandingPageBackgroundContainer,
   LandingPageOverlay: LandingPageOverlay,
   CenterText: CenterText,
-  MoviePoster: MoviePoster
+  MoviePoster: MoviePoster,
+  GenreList: GenreList,
+  Genre: Genre
 };

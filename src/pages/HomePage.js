@@ -18,6 +18,8 @@ class HomePage extends Component {
       movie = this.props.movies[0];
     }
 
+    console.log("movie", this.props.movies);
+
     return (
       <div>
         <Banner movies={this.props.movies} movie={movie} />
