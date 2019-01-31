@@ -14,8 +14,8 @@ class Movies extends Component {
     };
 
     const movieItems = this.props.movies.map(movie => (
-      <Col style={styles.ColumnStyle} md={4}>
-        <Link key={movie.id} to={`/movies/${movie.id}`}>
+      <Col key={movie.id} style={styles.ColumnStyle} md={4}>
+        <Link to={`/movies/${movie.id}`}>
           <MovieCard movie={movie} />
         </Link>
       </Col>
